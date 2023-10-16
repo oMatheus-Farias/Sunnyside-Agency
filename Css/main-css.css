@@ -1,0 +1,21 @@
+:root{
+    --Very-dark-desaturated-blue: #23303e;
+    --Dark-grayish-blue: #818498;
+    --Dark-desaturated-cyan: #25564b;
+    --Dark-moderate-cyan: #458c7e;
+    --Dark-blue: #19536b;
+    --Off-white: #fcfcfc;
+    --Grayish-blue: #a7abae;
+    --Very-dark-grayish-blue: #5a636c;
+    --Footer-background: #8AD2C4;
+}
+
+html{
+    /* font-family: 'Barlow', sans-serif; */
+    /* font-family: 'Fraunces', serif; */
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+}
