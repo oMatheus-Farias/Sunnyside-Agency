@@ -8,14 +8,123 @@
     --Grayish-blue: #a7abae;
     --Very-dark-grayish-blue: #5a636c;
     --Footer-background: #8AD2C4;
+    --Yellow: #fad400;
+    --White: #ffffff;
 }
 
 html{
-    /* font-family: 'Barlow', sans-serif; */
-    /* font-family: 'Fraunces', serif; */
     font-size: 62.5%;
 }
 
 body{
     min-height: 100vh;
+}
+
+.header-container{
+    background-image: url(../images/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 52em;
+}
+
+.header-top{
+    padding: 1.6em 2.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.position{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.hamburguer-menu{
+    cursor: pointer;
+}
+
+.nav{
+    min-width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.nav-list-content{
+    max-width: 90%;
+    margin: auto;
+    padding: 2em 2.8em;
+    transition: all .4s;
+    transform: translateY(-38em);
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    margin: 0 auto;
+    padding: 2em 0;
+    list-style: none;
+    gap: 2em;
+}
+
+.nav-list li{
+    min-width: 100%;
+    text-align: center;
+}
+
+.nav-list li a{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    max-width: 60%;
+    margin: auto;
+    color: var(--Dark-grayish-blue);
+    padding: 1em 0;
+}
+
+.nav-list li a:hover{
+    background-color: var(--Yellow);
+    border-radius: 2em;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.nav-detail{
+    margin-left: auto;
+    width: 3em;
+    height: 3em;
+    background-image: linear-gradient(133deg, transparent 49.83%, var(--White) 52.36%);
+} 
+
+.headerTitle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10em auto 0;
+    max-width: 90%;
+    gap: 2em;
+}
+
+.header-title{
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--White);
+    margin: 0;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+@media screen and (min-width: 531px){
+    .header-container{
+        background-image: url(../images/desktop/image-header.jpg);
+    }
 }
