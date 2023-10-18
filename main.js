@@ -13,7 +13,7 @@
 
     function displayMobileOrTablet(){
         
-        if(this.innerWidth < 1000){
+        if(this.innerWidth < 800){
             function stateMenu(){
                 openedOrClosed.open ? $navListContent.style.transform = 'translateY(0em)' : $navListContent.style.transform = 'translateY(-38em)';
             };

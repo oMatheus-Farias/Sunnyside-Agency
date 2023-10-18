@@ -37,11 +37,11 @@ body{
     align-items: center;
 }
 
-.position{
+/* .position{
     position: sticky;
     top: 0;
     left: 0;
-}
+} */
 
 .hamburguer-menu{
     cursor: pointer;
@@ -125,6 +125,85 @@ body{
 }
 /* end header / nav */
 
+
+/* main */
+.main, .main-content{
+    min-width: 100%;
+}
+
+.img-container{
+    min-width: 100%;
+    min-height: 40em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-transform{
+    background-image: url(../images/mobile/image-transform.jpg);
+}
+
+.img-stand-out{
+    background-image: url(../images/mobile/image-stand-out.jpg);
+}
+
+.banner-agency{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 40em;
+    background-color: var(--Off-white);
+    padding: 3.6em 2.8em;
+    box-sizing: border-box;
+    gap: 2.8em;
+}
+
+.banner_title{
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--Very-dark-desaturated-blue);
+    margin: 0;
+}
+
+.banner_text{
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 1.8em;
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+    margin: 0;
+}
+
+.banner_link{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* troca imagem do header */
 @media screen and (min-width: 33.18em){
     .header-container{
@@ -132,7 +211,8 @@ body{
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 50em){
+    /* header / nav */
     .header-top{
         display: block;
     }
@@ -179,9 +259,46 @@ body{
         color: var(--White);
     }
 
-    .position{
+    .header-nav-dasktop-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    /* end header / nav */
+
+
+    /* main */
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .img-transform{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .banner-transform{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .banner-agency{
+        align-items: start;
+    }
+
+    .banner_text, .banner_title{
+        text-align: start;
+    }
+
+    .img-stand-out{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .banner-stand-out{
+        grid-column: 2;
+        grid-row: 1;
     }
 }
