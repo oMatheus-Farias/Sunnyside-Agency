@@ -21,7 +21,6 @@
             $hamburguerMenu.addEventListener('click', actionMenu);
         
             function actionMenu(){
-        
                 openedOrClosed.open = !openedOrClosed.open;
                 stateMenu();
             };
