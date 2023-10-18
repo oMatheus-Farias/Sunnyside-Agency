@@ -8,19 +8,29 @@
         open: false
     };
 
-    function stateMenu(){
-        openedOrClosed.open ? $navListContent.style.transform = 'translateY(0em)' : $navListContent.style.transform = 'translateY(-38em)';
+    window.addEventListener('resize', displayMobileOrTablet);
+    window.addEventListener('DOMContentLoaded', displayMobileOrTablet);
+
+    function displayMobileOrTablet(){
+        
+        if(this.innerWidth < 1000){
+            function stateMenu(){
+                openedOrClosed.open ? $navListContent.style.transform = 'translateY(0em)' : $navListContent.style.transform = 'translateY(-38em)';
+            };
+            
+            $hamburguerMenu.addEventListener('click', actionMenu);
+        
+            function actionMenu(){
+        
+                openedOrClosed.open = !openedOrClosed.open;
+                stateMenu();
+            };
+
+            // teste.addEventListener('click', () => {
+            //     openedOrClosed.open ? actionMenu() : "";
+            // })
+        };
     };
+
     
-    $hamburguerMenu.addEventListener('click', actionMenu);
-
-    function actionMenu(){
-
-        openedOrClosed.open = !openedOrClosed.open;
-        stateMenu();
-    };
-
-    // teste.addEventListener('click', () => {
-    //     openedOrClosed.open ? actionMenu() : "";
-    // })
 })();
