@@ -37,12 +37,6 @@ body{
     align-items: center;
 }
 
-/* .position{
-    position: sticky;
-    top: 0;
-    left: 0;
-} */
-
 .hamburguer-menu{
     cursor: pointer;
 }
@@ -226,6 +220,73 @@ body{
     font-size: 1.4rem;
     line-height: 2rem;
     max-width: 30em;
+}
+
+.testimonials-container{
+    min-width: 100%;
+    background-color: var(--Off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.testimonials-title{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--Dark-grayish-blue);
+}
+
+.testimonials-content{
+    min-width: 100%;
+    margin-top: 6em;
+}
+
+.client-testimonial{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6.2em;
+    box-sizing: border-box;
+}
+
+.img-client{
+    max-width: 8em;
+    max-height: 8em;
+}
+
+.img-client img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonial_text{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    max-width: 28em;
+    color: var(--Very-dark-grayish-blue);
+    line-height: 1.6em;
+    margin-top: 2.2em;
+}
+
+.name-client{
+    font-family: 'Fraunces', serif;
+    font-size: 1.4em;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 0;
+}
+
+.profession-client{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+    margin: .8em 0 7.2em;
 }
 
 
