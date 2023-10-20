@@ -3,6 +3,7 @@
 
     const $hamburguerMenu = document.querySelector('.hamburguer-menu');
     const $navListContent = document.querySelector('.nav-list-content');
+    const $main = document.querySelector('.main');
 
     const openedOrClosed = {
         open: false
@@ -25,9 +26,9 @@
                 stateMenu();
             };
 
-            // teste.addEventListener('click', () => {
-            //     openedOrClosed.open ? actionMenu() : "";
-            // })
+            $main.addEventListener('click', () => {
+                openedOrClosed.open ? actionMenu() : "";
+            });
         };
     };
 
