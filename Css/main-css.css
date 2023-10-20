@@ -346,7 +346,9 @@ body{
 .img-cubes{
     background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
 }
+/* end main  */
 
+/* footer  */
 .footer{
     min-height: 24em;
     background-color: var(--Footer-background);
@@ -359,7 +361,6 @@ body{
 .footer-box-links{
     margin-top: 2em;
     display: flex;
-    gap: calc(5.2em - 4em);
     flex: 1;
 }
 
@@ -369,7 +370,7 @@ body{
     font-family: 'Barlow', sans-serif;
     font-size: 1.6rem;
     height: fit-content;
-    padding: 2em;
+    padding: 2em 1.6em;
     box-sizing: border-box;
 }
 
@@ -380,7 +381,9 @@ body{
 .footer-box-social-media{
     display: flex;
     gap: 2em;
-}
+} 
+/* end footer  */
+
 
 /* troca imagem para versão dasktop */
 @media screen and (min-width: 33.18em){
@@ -518,4 +521,5 @@ body{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
     }
+    /* end main  */
 }
