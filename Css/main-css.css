@@ -229,7 +229,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5em;
+    padding: 6em 0;
 }
 
 .testimonials-title{
@@ -237,6 +237,7 @@ body{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1em;
+    margin: 0;
     color: var(--Dark-grayish-blue);
 }
 
@@ -252,7 +253,6 @@ body{
     align-items: center;
     padding: 0 6.2em;
     box-sizing: border-box;
-    /* background-color: #458c7e; */
 }
 
 .img-client{
@@ -300,7 +300,37 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 7.2em;
+}
+
+.gallery-images-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    min-width: 100%;
+}
+
+.gallery-content{
+    min-width: 12em;
+    height: 26em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-milks{
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.img-orange{
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+}
+
+.img-cone{
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+}
+
+.img-cubes{
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
 
@@ -317,7 +347,7 @@ body{
 
 
 
-/* troca imagem */
+/* troca imagem para versão dasktop */
 @media screen and (min-width: 33.18em){
     .header-container{
         background-image: url(../images/desktop/image-header.jpg);
@@ -329,6 +359,22 @@ body{
 
     .img-photography{
         background-image: url(../images/desktop/image-photography.jpg);
+    }
+
+    .img-milks{
+        background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    .img-orange{
+        background-image: url(../images/desktop/image-gallery-orange.jpg);
+    }
+
+    .img-cone{
+        background-image: url(../images/desktop/image-gallery-cone.jpg);
+    }
+
+    .img-cubes{
+        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
     }
 }
 
@@ -426,6 +472,11 @@ body{
     .testimonials-content{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .gallery-images-container{
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
     }
 }
