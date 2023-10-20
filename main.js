@@ -4,6 +4,8 @@
     const $hamburguerMenu = document.querySelector('.hamburguer-menu');
     const $navListContent = document.querySelector('.nav-list-content');
     const $main = document.querySelector('.main');
+    const $iconsSocialMedia = Array.from(document.querySelectorAll('.footer-box-social-media path'));
+    const $linksSocialMedia = Array.from(document.querySelectorAll('.footer-box-social-media a'));
 
     const openedOrClosed = {
         open: false
@@ -32,5 +34,19 @@
         };
     };
 
-    
+    const hoverEvent = () =>{
+        $linksSocialMedia.forEach((icon, index) => {
+            icon.addEventListener('mouseover', () => {
+
+                $iconsSocialMedia[index].getAttribute('fill') === "#2C7566" ? $iconsSocialMedia[index].setAttribute('fill', '#FFF') : "";
+            });
+
+            icon.addEventListener('mouseout', () => {
+                
+                $iconsSocialMedia[index].getAttribute('fill') === "#FFF" ? $iconsSocialMedia[index].setAttribute('fill', '#2C7566') : "";
+            });
+        });
+    };
+
+    hoverEvent();    
 })();
