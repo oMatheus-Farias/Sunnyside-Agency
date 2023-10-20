@@ -255,6 +255,10 @@ body{
     box-sizing: border-box;
 }
 
+.client-testimonial:not([no-margin-bottom]){
+    margin-bottom: 6em;
+}
+
 .img-client{
     max-width: 8em;
     max-height: 8em;
@@ -333,19 +337,33 @@ body{
     background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
+.footer{
+    min-height: 24em;
+    background-color: var(--Footer-background);
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.footer-box-links{
+    margin-top: 4.6em;
+    display: flex;
+    gap: 5.2em;
+    flex: 1;
+}
 
+.footer-box-links a{
+    text-decoration: none;
+    color: var(--Dark-moderate-cyan);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+}
 
-
-
-
-
-
-
-
-
-
-
+.footer-box-social-media{
+    display: flex;
+    gap: 2em;
+}
 
 /* troca imagem para versão dasktop */
 @media screen and (min-width: 33.18em){
@@ -473,6 +491,10 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
+    }
+
+    .client-testimonial:not([no-margin-bottom]){
+        margin-bottom: 0em;
     }
 
     .gallery-images-container{
